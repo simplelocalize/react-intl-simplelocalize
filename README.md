@@ -10,6 +10,12 @@
 npm install --save react-intl-simplelocalize
 ```
 
+or
+
+```bash
+yarn add react-intl-simplelocalize
+```
+
 ## Usage
 
 ```jsx
