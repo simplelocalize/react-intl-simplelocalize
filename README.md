@@ -7,16 +7,18 @@
 ## Install
 
 ```bash
-npm install --save react-intl-simplelocalize
+npm install --save react-intl-simplelocalize react-intl
 ```
 
 or
 
 ```bash
-yarn add react-intl-simplelocalize
+yarn add react-intl-simplelocalize react-intl
 ```
 
-## Usage
+## Configuration
+
+Wrap your applications same as you do with redux `<Provider/>`.
 
 ```jsx
 import SimpleLocalize from 'react-intl-simplelocalize'
@@ -25,12 +27,30 @@ const app = document.getElementById("root");
 
 render(
   <SimpleLocalize hash="<PROJECT_HASH>">
-    <Provider store={store}>
       <App/>
-    </Provider>
   </SimpleLocalize>, app);
-
 ```
+
+## Usage
+
+Start using `<FormattedMessage />`components from `yahoo/react-intl`.
+
+```jsx
+import React from "react";
+import {FormattedMessage} from "react-intl";
+
+class Home extends React.Component {
+
+  render() {
+    return (<FormattedMessage id="hello" />);
+  }
+
+}
+
+export default Footer;
+```
+
+That's all!
 
 ## License
 
