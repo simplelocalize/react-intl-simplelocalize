@@ -18,7 +18,10 @@ yarn add react-intl-simplelocalize react-intl
 
 ## Configuration
 
-Wrap your applications same as you do with redux `<Provider/>`.
+- Setup account here: https://simplelocalize.io
+- Create new ReactJS project.
+- Copy project hash from settings tabs.
+- Wrap your applications same as you do with redux `<Provider/>`.
 
 ```jsx
 import SimpleLocalize from 'react-intl-simplelocalize'
@@ -50,7 +53,7 @@ class Home extends React.Component {
 export default Footer;
 ```
 
-That's all!
+That's all, all translations will be now loaded and injected automatically.
 
 ## License
 
