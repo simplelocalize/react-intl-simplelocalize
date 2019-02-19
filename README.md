@@ -13,17 +13,17 @@ npm install --save react-intl-simplelocalize
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import SimpleLocalize from 'react-intl-simplelocalize'
 
-import MyComponent from 'react-intl-simplelocalize'
+const app = document.getElementById("root");
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+render(
+  <SimpleLocalize hash="<PROJECT_HASH>">
+    <Provider store={store}>
+      <App/>
+    </Provider>
+  </SimpleLocalize>, app);
+
 ```
 
 ## License
