@@ -5,6 +5,7 @@ import {addLocaleData, IntlProvider} from "react-intl";
 type Props = {
   hash: string,
   snapshot: string,
+  language: string,
   children: Array<any>
 }
 
@@ -22,7 +23,7 @@ class SimpleLocalize extends React.Component<Props, State> {
 
   constructor(props: Props) {
     super(props);
-    const language = localStorage.getItem('lang') || fallbackLanguage;
+    const language = localStorage.getItem('lang') || props.language;
     this.state = {
       messages: undefined,
       language
@@ -37,13 +38,19 @@ class SimpleLocalize extends React.Component<Props, State> {
 
   fetchMessages = () => {
     const {hash, snapshot} = this.props;
+
+    if(!hash){
+      throw Error("Please provide project hash!");
+    }
+
+    if(snapshot === "_latest"){
+      console.warn("Using latest i18n data snapshot!");
+    }
+
     const {language} = this.state;
     const messages = `https://cdn.simplelocalize.io/${hash}/${snapshot}/${language}`;
     return fetch(messages)
-      .then((data) => data.json())
-      .then((messages) => {
-        return messages;
-      });
+      .then((data) => data.json());
   };
 
   render() {
