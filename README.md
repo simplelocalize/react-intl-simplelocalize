@@ -19,7 +19,7 @@ yarn add react-intl-simplelocalize react-intl
 ## Configuration
 
 - Setup account here: https://simplelocalize.io
-- Create new ReactJS project.
+- Create new FormatJS project.
 - Copy project hash from settings tabs.
 - Wrap your applications same as you do with redux `<Provider/>`.
 
@@ -54,6 +54,10 @@ export default Footer;
 ```
 
 That's all, all translations will be now loaded and injected automatically.
+
+## Adding new i18n keys
+
+
 
 ## License
 
