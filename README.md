@@ -62,7 +62,7 @@ That's all, all translations will be now loaded and injected automatically.
 ### Discovering new keys automatically 
 Consider use of [`simplelocalize-i18n-keys-scrapper`](https://github.com/simplelocalize/simplelocalize-i18n-key-scrapper) for the best expirience. This application will find and push all new i18n keys in seconds! 
 
-### Adding new keys manualy
+### Adding new keys manually
 You can always manually add new keys using [SimpleLocalize cloud](https://app.simplelocalize.io/login).
 
 
