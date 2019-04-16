@@ -29,7 +29,7 @@ import SimpleLocalize from 'react-intl-simplelocalize'
 const app = document.getElementById("root");
 
 render(
-  <SimpleLocalize hash="<PROJECT_HASH>">
+  <SimpleLocalize projectToken="<PROJECT_TOKEN>">
       <App/>
   </SimpleLocalize>, app);
 ```
@@ -60,10 +60,10 @@ That's all, all translations will be now loaded and injected automatically.
 ## Adding new i18n keys
 
 ### Discovering new keys automatically 
-Consider use of [`simplelocalize-i18n-keys-scrapper`](https://github.com/simplelocalize/simplelocalize-i18n-key-scrapper) for the best experience. This application will find and push all new i18n keys in seconds! 
+Consider use of [`simplelocalize-cli`](https://github.com/simplelocalize/simplelocalize-cli) for the best experience. This application will find and push all new i18n keys in seconds! 
 
 ### Adding new keys manually
-You can always manually add new keys using [SimpleLocalize cloud](https://app.simplelocalize.io/login).
+You can always manually add new keys using [SimpleLocalize cloud](https://simplelocalize.io).
 
 
 ## License
