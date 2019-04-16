@@ -3,7 +3,7 @@ import React, {Fragment} from "react";
 import {addLocaleData, IntlProvider} from "react-intl";
 
 type Props = {
-  hash: string,
+  projectToken: string,
   snapshot: string,
   language: string,
   children: Array<any>
@@ -37,10 +37,10 @@ class SimpleLocalize extends React.Component<Props, State> {
 
 
   fetchMessages = () => {
-    const {hash, snapshot} = this.props;
+    const {projectToken, snapshot} = this.props;
 
-    if(!hash){
-      throw Error("Please provide project hash!");
+    if(!projectToken){
+      throw Error("Please provide project token property!");
     }
 
     if(snapshot === "_latest"){
@@ -48,7 +48,7 @@ class SimpleLocalize extends React.Component<Props, State> {
     }
 
     const {language} = this.state;
-    const messages = `https://cdn.simplelocalize.io/${hash}/${snapshot}/${language}`;
+    const messages = `https://cdn.simplelocalize.io/${projectToken}/${snapshot}/${language}`;
     return fetch(messages)
     .then((data) => data.json());
   };
