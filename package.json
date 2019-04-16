@@ -1,13 +1,24 @@
 {
   "name": "react-intl-simplelocalize",
   "version": "1.0.4",
-  "description": "",
-  "author": "",
+  "description": "SimpleLocalize ReactJS i18n component",
+  "author": "Jakub Pomykała <jakub.pomykala@gmail.com>",
   "license": "MIT",
-  "repository": "/react-intl-simplelocalize",
+  "repository": "simplelocalize/react-intl-simplelocalize",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "keywords": [
+    "react",
+    "react-intl",
+    "library",
+    "simplelocalize",
+    "android",
+    "ios",
+    "i18n",
+    "internationalization",
+    "multilanguage"
+  ],
   "engines": {
     "node": ">=8",
     "npm": ">=5"
