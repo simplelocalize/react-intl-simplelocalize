@@ -1,3 +1,5 @@
+![simplelocalize yahoo/react-intl integration](https://i.imgur.com/i6BN7hq.png)
+
 # react-intl-simplelocalize
 
 > 
